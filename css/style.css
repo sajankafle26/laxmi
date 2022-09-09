@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: 'Mukta', sans-serif;
+}
+ul 
+{
+    list-style: none;
+}
+a 
+{
+    text-decoration: none;
+}
+.con
+{
+    max-width: 1200px;
+    margin: auto;
+}
+.w-100
+{
+    width: 100%;
+}
+.grid 
+{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+nav 
+{
+    background: #32549A;
+    line-height: 55px;
+}
+nav ul 
+{
+    display: grid;
+    grid-template-columns: repeat(12,auto);
+}
+nav li a 
+{
+    color: #fff;
+}
+.active a 
+{
+    background: red;
+    padding: 18px;
+}
+.ads
+{
+    margin: 5px 0;
+}
+article
+{
+    text-align: center;
+}
+article h2 
+{
+    font-size: 44px;
+    padding: 20px 0;
+}
+article:nth-child(3)
+{
+    border-bottom: 4px solid blue;
+    padding: 20px;
+}
+.grid1
+{
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    gap: 20px;
+}
+.main h1 
+{
+    background: #999;
+    font-size: 22px;
+    padding: 20px;
+    border-left: 5px solid red;
+}
+.grid3
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #F7F7F7;
+    padding: 20px;
+    gap: 20px;
+}
+.grid3-right li 
+{
+    font-size: 18px;
+    line-height: 30px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(25, 25, 98);
+}
+.black
+{
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+.grid4
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.title
+{
+    background: #ccc;
+    padding: 5px;
+    border-left: 5px solid red;
+    color: #000;
+    margin: 5px 0;
+}
+.listgroup li
+{
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px dotted #999;
+}
+.top
+{
+    background: #32549A;
+    color: #fff;
+    padding: 30px 0;
+}
+.bottom 
+{
+    background: #000000;
+    line-height: 55px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .con{ padding: 15px;}
+    .grid, .grid1, .grid2, .grid3, .grid4{ grid-template-columns: auto;}
+    nav ul{ display: none;}
+    article h2{ font-size: 17px;}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .con{ padding: 15px;}
+    .grid1{ grid-template-columns: auto;}
+}
